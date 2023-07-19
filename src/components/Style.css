@@ -1,0 +1,140 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.hamburger{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    justify-self: end;
+    /* background-color: blue; */
+}
+
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    width: 24px;
+    height: 2px;
+    background-color: #111;
+    position: absolute;
+    transform: rotate(0);
+    transition: all 0.5s ease;
+}
+
+
+.hamburger-middle{
+    transform: translateY(6px);
+}
+
+.hamburger-bottom{
+    transform: translateY(12px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0deg);
+}
+
+.open .hamburger-middle{
+    display: none;
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px) ;
+}
+
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px) ;
+}
+
+
+.containerr {
+    display: flex;
+    right: 0%;
+    align-self: flex-end;
+
+}
+
+.menu-item{
+    left: 0%;
+    min-width: 90%;
+    margin-top: 25px;    
+    position: absolute;  
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.hamburger-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;  
+    text-align: start;
+    /* margin-top: 40px; */
+    background: #4125a6;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 5s; */
+    min-width: 100%;
+    z-index: 50;
+}
+
+.hamburger-ul li{
+    margin-left: 20px;     
+}
+
+.hamburger-ul li:first-child{
+    margin-top: 30px;
+}
+
+.hamburger-ul li:last-child{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.containerr {   
+    border: none;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+
+/* a:hover{
+    background-color: rgb(109, 130, 5);
+    color: #fff
+} */
+
+
+.HIcons{
+    display: flex;
+}
+
+
+.HIcons img{
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+    .HIcons img{
+        margin-right: 5px;
+        cursor: pointer;
+    }
+}
+
