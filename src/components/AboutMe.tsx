@@ -13,7 +13,7 @@ const AboutMe: React.FC = () => {
   return (
     <section className="bg-gray-100 py-8">
       <p className='text-red-500'>Lorem ipsum dolor sit amet.</p>
-      <Footer/>
+      
     </section>
   );
 };

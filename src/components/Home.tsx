@@ -1,40 +1,20 @@
 import React from 'react';
-// import  { useState } from 'react';
 import './Home.css'; // Import the CSS file for the component
 import './utils.css'
 import Skills from './Skills';
 import Footer from './Footer';
 import FeaturedProjects from './FeaturedProjects';
-// import HamburgerMenu from './Hamburger';
-import Projects from './Projects';
-import featureProject from '../../sanity-portfolio/schemas/featureProject';
-// import {project.imageUrl} from './FeaturedProjects'
-
 
 
 const Home: React.FC = () => {
 
-  // const EcommerceArticle = () => {
-  //   const [isExpanded, setIsExpanded] = useState(false);
-
-  //   const toggleExpanded = () => {
-  //     setIsExpanded(!isExpanded);
-  //   };
-
-
-
-
-
-
-
-  return (
+   return (
     <div className="home d-grid-gap">
-      {/* <HamburgerMenu /> */}
       <section className="hero transparent-bg">
         <div className="hero-content d-grid-gap">
           <h1 className='hero-title'>Welcome to My Portfolio</h1>
           <p className='p-font-size color-text'>Discover my projects and skills as a web developer</p>
-          <a href="/projects" className=" cta-button button">
+          <a href="#/projects" className=" cta-button button">
             View Projects
           </a>
         </div>
@@ -42,44 +22,10 @@ const Home: React.FC = () => {
 
       <section className="featured-projects section-bg ">
         <FeaturedProjects />
-
-
-
-        {/* <h2 className='title color-text'>Featured Projects</h2>
-          <div className="project-list box-shadow">
-
-          <div className="project-item">
-              <img src="<project." alt="Project" />
-              <h3> project1 </h3>
-              <p>Project description</p>
-            </div>
-           
-            <div className="project-item">
-              <img src="project-image.jpg" alt="Project" />
-              <h3> project2 </h3>
-              <p>Project description</p>
-            </div>
-
-            <div className="project-item">
-              <img src="project-image.jpg" alt="Project" />
-              <h3>Project Title 3</h3>
-              <p>Project description</p>
-            </div>
-          </div> */}
       </section>
       <section>
       
       </section>
-
-      {/* <section className="skills">
-          <h2 className='title color-text'>Skills</h2>
-          <ul className="skill-list">
-        
-    
-           
-          </ul>
-        </section> */}
-
       <section className="skills section-bg">
         <Skills />
       </section>
@@ -105,18 +51,18 @@ const Home: React.FC = () => {
 
       <section className="cta section-bg pb-4">
         <h2 className='title color-text'>Ready to get started?</h2>
-        <a href="/contact" className="cta-button button">
+        <a href="#/contact" className="cta-button button">
           Contact Me
         </a>
       </section>
       <section className="skills section-bg">
         {/* <Sanity /> */}
-      </section>
-      <footer>
-        {<Footer />}
-      </footer>
+      </section>      
     </div>
   );
 };
 
 export default Home;
+
+
+

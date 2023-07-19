@@ -264,8 +264,7 @@ const ContactUs: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
-      <Footer/>
+      </div>      
     </section>
   );
 };

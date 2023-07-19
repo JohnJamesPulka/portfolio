@@ -194,10 +194,7 @@ const Projects: React.FC = () => {
             </a>
           ))}
         </div>
-      </div>
-      <div>
-        <Footer/>
-      </div>
+      </div>      
     </section>
   );
 };

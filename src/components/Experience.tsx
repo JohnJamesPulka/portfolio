@@ -38,9 +38,7 @@ const Experience: React.FC = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      <Footer/>
+      </div>      
     </section>
   );
 };

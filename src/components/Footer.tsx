@@ -1,47 +1,33 @@
 import React, { useState, useEffect } from 'react';
-import createClient from "../clients.js";
+import createClient from "../clients";
 import './utils.css';
 
 
 interface Footer {
   mainImage: {
     asset: {
+      _id: string;
       url: string;
     };
     alt: string;
   };
 
-  myClass: Document;
-
-
-  id: number;
-  slug: string;
   title: string;
-  title2: string;
-  description1: string;
-  description2: string;
-  imageUrl: string;
-  category: string;
 }
-
 
 const Footer: React.FC = () => {
   const [footers, setFootersIcon] = useState<Footer[]>([]);
   useEffect(() => {
     createClient.fetch(`*[_type == "footer"]{
-      _id,
-      mainImage{
+      mainImage: {
         asset->{
-            _id,
-            url
+          _id,
+          url
         },
         alt
-    },
+      }, 
       title,
-      title2,
-      slug,      
-      description1,
-      description2,
+      slug,
     }`).then((data: Footer[]) => setFootersIcon(data))
       .catch(console.error);
 
@@ -54,7 +40,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="container block md:flex text-white">
-        <div className='HIcons'>
+        <div className=''>
           {footers.map((footer, slug) => (
             <div
               key={slug}
