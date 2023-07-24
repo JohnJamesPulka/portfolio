@@ -40,14 +40,32 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="container block md:flex text-white">
-        <div className=''>
-          {footers.map((footer, slug) => (
+        <div className='flex justify-center'>
+
+          <a href="https://wa.me/message/HHHTEN4NCWRNL1" target='blank' className='mr-3'>
+            <img src="/Icons/whatsapp.png" alt="" className='flex justify-self-center self-center w-[35px] h-[35px]' />
+          </a>
+          <a href="#/" target='blank' className='mr-3'>
+            <img src="/Icons/facebook.png" alt="" className='flex justify-self-center self-center w-[35px] h-[35px]' />
+          </a>
+          <a href="https://twitter.com/edenpison" target='blank' className='mr-3'>
+            <img src="/Icons/twitter (1).png" alt="" className=' flex justify-self-center self-center w-[35px] h-[35px]' />
+          </a>
+          <a href="https://www.tiktok.com/@zekkah.com" target='blank' className='mr-3'>
+            <img src="/Icons/tik-tok (1).png" alt="" className=' flex justify-self-center self-center w-[35px] h-[35px]' />
+          </a>
+
+
+
+
+
+          {/* {footers.map((footer, slug) => (
             <div
               key={slug}
             >
               <img src={footer.mainImage.asset.url} alt={footer.title} className="HIcon" />
             </div>
-          ))}
+          ))} */}
         </div>
 
 
