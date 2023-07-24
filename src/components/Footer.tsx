@@ -39,9 +39,10 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="footer">
-      <div className="container block md:flex text-white">
-        <div className='flex justify-center'>
+      <div className="container grid gap-[20px] md:flex text-white">
 
+        
+        <div className='flex justify-center'>
           <a href="https://wa.me/message/HHHTEN4NCWRNL1" target='blank' className='mr-3'>
             <img src="/Icons/whatsapp.png" alt="" className='flex justify-self-center self-center w-[35px] h-[35px]' />
           </a>
@@ -58,18 +59,22 @@ const Footer: React.FC = () => {
 
 
         <nav>
-          <ul>
-            <li className='link-hover'><a href="#/">Home</a></li>
-            <li className='link-hover'><a href="#/about">About</a></li>
-            <li className='link-hover'><a href="#/projects">Projects</a></li>
-            <li className='link-hover'><a href="#/contact">Contact</a></li>
+          <ul className='flex flex-col justify-center items-center'>
+            <li className='link-hover py-4 px-6 rounded-[15px] max-w-[250px] min-w-[150px]'><a href="#/" className=' font-bold'>Home</a></li>
+            <li className='link-hover py-4 px-6 rounded-[15px] max-w-[250px] min-w-[150px]'><a href="#/about" className=' font-bold'>About</a></li>
+            <li className='link-hover py-4 px-6 rounded-[15px] max-w-[250px] min-w-[150px]'><a href="#/projects" className=' font-bold'>Projects</a></li>
+            <li className='link-hover py-4 px-6 rounded-[15px] max-w-[250px] min-w-[150px]'><a href="#/contact" className=' font-bold'>Contact</a></li>
           </ul>
         </nav>
+
+
         <form action="" className=''>
           <label htmlFor="email"></label>
           <input type="email" placeholder='subscribe to our news letter' id='email' className='mr-4 h-10 p-10 ' />
           <button type='submit' className='py-2 mt-4 button'>submit</button>
         </form>
+
+
         <p className='cursor-pointer'>&copy; {new Date().getFullYear()} <a href="https://www.zekkah.com/" target='blank'>ZEKKAH.COM</a> . All rights reserved.</p>
       </div>
     </footer>
