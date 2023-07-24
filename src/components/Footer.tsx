@@ -54,18 +54,6 @@ const Footer: React.FC = () => {
           <a href="https://www.tiktok.com/@zekkah.com" target='blank' className='mr-3'>
             <img src="/Icons/tik-tok (1).png" alt="" className=' flex justify-self-center self-center w-[35px] h-[35px]' />
           </a>
-
-
-
-
-
-          {/* {footers.map((footer, slug) => (
-            <div
-              key={slug}
-            >
-              <img src={footer.mainImage.asset.url} alt={footer.title} className="HIcon" />
-            </div>
-          ))} */}
         </div>
 
 
