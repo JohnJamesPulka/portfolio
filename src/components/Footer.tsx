@@ -59,10 +59,10 @@ const Footer: React.FC = () => {
 
         <nav>
           <ul>
-            <li className='link-hover'><a href="/">Home</a></li>
-            <li className='link-hover'><a href="/about">About</a></li>
-            <li className='link-hover'><a href="/projects">Projects</a></li>
-            <li className='link-hover'><a href="/contact">Contact</a></li>
+            <li className='link-hover'><a href="#/">Home</a></li>
+            <li className='link-hover'><a href="#/about">About</a></li>
+            <li className='link-hover'><a href="#/projects">Projects</a></li>
+            <li className='link-hover'><a href="#/contact">Contact</a></li>
           </ul>
         </nav>
         <form action="" className=''>
